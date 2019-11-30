@@ -1,0 +1,1493 @@
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    font-family: Open Sans, Tahoma, Geneva, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    line-height: 1.5
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none
+}
+
+.section-de-cu {
+    background-color: #fff
+}
+
+.section-chapter-truyen {
+    padding-top: 5px!important
+}
+
+.section-view-chapter {
+    padding: 5px 0 30px 0
+}
+
+.index-section {
+    padding: 30px 0 30px 0
+}
+
+.dark {
+    background-color: #ff530d
+}
+
+.btn {
+    border-radius: 0
+}
+
+.view-chapter {
+    background: url(https://truyenmoi.xyz/themes/home/icons/black_thread.png)!important;
+    border: 0
+}
+
+.container {
+    max-width: 1270px
+}
+
+.container-fluid {
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+.d-flex {
+    display: flex!important
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto!important
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0!important
+}
+
+.mr-4,
+.mx-4 {
+    margin-right: 1.5rem!important
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto!important
+}
+
+.mt-10 {
+    margin-top: 10px
+}
+
+.mb-5 {
+    margin-bottom: 5px!important
+}
+
+.mb-10 {
+    margin-bottom: 10px
+}
+
+.mr-5 {
+    margin-right: 5px
+}
+
+.mr-10 {
+    margin-right: 5px
+}
+
+.pl-15 {
+    padding-left: 15px
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important
+}
+
+.top-menu {
+    background-color: #333;
+    font-size: 90%;
+    text-align: center
+}
+
+.contact-mail,
+.top-menu .fa-envelope {
+    color: #fff
+}
+
+.dropdown-menu {
+    min-width: 200px
+}
+
+.dropdown-menu.columns-3 {
+    min-width: 600px;
+    border: 1px solid #d9d9d9;
+    -moz-box-shadow: 0 3px 8px rgba(3, 3, 3, .26);
+    -webkit-box-shadow: 0 3px 8px rgba(3, 3, 3, .26);
+    box-shadow: 0 3px 8px rgba(3, 3, 3, .26);
+    border-radius: 0;
+    border: 2px solid #ff530d
+}
+
+.multi-column-dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.multi-column-dropdown li a {
+    color: #000;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px
+}
+
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: #ff530d
+}
+
+.breadcrumb-container {
+    height: 30px;
+    line-height: 30px;
+    color: #4e4e4e;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.navbar-breadcrumb {
+    background: #ececec;
+    border-top: 1px solid #476171;
+    box-shadow: 1px 2px 1px #ccc
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5
+}
+
+footer a {
+    color: #fff
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: none
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 75%
+}
+
+@media screen and (max-width:576px) {
+    #control-list-button {
+        display: none
+    }
+    #control-home-button {
+        display: none
+    }
+    .col-noi-dung {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .breadcrumb {
+        padding: 0;
+        background-color: #059e9a;
+        white-space: nowrap;
+        flex-wrap: unset
+    }
+    .breadcrumb li a {
+        color: #fff;
+        font-weight: 400
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+    .hidden-control-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        font-size: 13px;
+        line-height: 25px;
+        background-color: #e4e4e4;
+        max-height: 40px;
+        z-index: 99999;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        cursor: pointer;
+        width: 100%
+    }
+    .hidden-control-mobile a {
+        padding: 6px 5px;
+        display: inline-block;
+        vertical-align: middle
+    }
+    .hidden-control-mobile .hidden-list-chap {
+        color: #9c27b0
+    }
+    .hidden-control-mobile .hidden-home-mobile {
+        color: #ff530d
+    }
+    .hidden-control-mobile .change-server-mobile {
+        color: #e91e63
+    }
+    .div-chap {
+        display: inline-block
+    }
+    .hidden-control-mobile .hidden-next-chapter,
+    .hidden-control-mobile .hidden-prev-chapter {
+        background: #27ae60;
+        color: #fff;
+        border-radius: 2px;
+        padding: 3px 10px
+    }
+    .info-list {
+        font-size: .8em
+    }
+    .image-truyen img {
+        width: 100%
+    }
+}
+
+@media (min-width:1200px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0
+    }
+    .modal-header {
+        background: #103f4b;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0
+    }
+    .modal-content {
+        border-radius: 0
+    }
+    .modal-body {
+        position: relative;
+        padding: 0
+    }
+    .close {
+        position: absolute;
+        right: -30px;
+        top: 0;
+        z-index: 999;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #fff;
+        opacity: 1
+    }
+    .btn-bao-loi {
+        border: 1px solid #103f4b;
+        background: #103f4b;
+        color: #fff;
+        transition: all .3s;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        white-space: nowrap
+    }
+    .breadcrumb {
+        border-radius: 0;
+        background-color: #fff
+    }
+    .breadcrumb li a {
+        color: #c8102e;
+        font-weight: 700
+    }
+    .breadcrumb li a:hover {
+        text-decoration: none
+    }
+    .hidden-control-mobile {
+        display: block
+    }
+    .hidden-control-mobile {
+        display: block;
+        font-size: 13px;
+        line-height: 25px;
+        background-color: #e4e4e4;
+        max-height: 40px;
+        z-index: 99999;
+        white-space: nowrap;
+        cursor: pointer;
+        width: 100%
+    }
+    .hidden-control-mobile a {
+        padding: 6px 5px;
+        display: inline-block;
+        vertical-align: middle
+    }
+    .hidden-control-mobile .hidden-list-chap {
+        color: #9c27b0
+    }
+    .hidden-control-mobile .hidden-home-mobile {
+        color: #ff530d
+    }
+    .hidden-control-mobile .change-server-mobile {
+        color: #e91e63
+    }
+    .div-chap {
+        display: inline-block
+    }
+    #hidden-select-chapter {
+        height: 30px;
+        width: 300px;
+        text-align: right
+    }
+    .hidden-control-mobile .hidden-next-chapter,
+    .hidden-control-mobile .hidden-prev-chapter {
+        background: #27ae60;
+        color: #fff;
+        border-radius: 2px;
+        padding: 3px 10px
+    }
+    .image-truyen img {
+        width: 80%
+    }
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    transition: all .3s ease;
+    border-radius: 0
+}
+
+.owl-theme .owl-nav [class*=owl-].disabled:hover {
+    background-color: #d6d6d6
+}
+
+#truyen-de-cu.owl-theme .owl-next,
+#truyen-de-cu.owl-theme .owl-prev {
+    background: rgba(0, 0, 0, .5);
+    width: 30px;
+    line-height: 40px;
+    height: 60px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 40%
+}
+
+.fa-arrow-left:before {
+    content: "\f104";
+    color: #fff;
+    font-size: 20px
+}
+
+.fa-arrow-right:before {
+    content: "\f105";
+    color: #fff;
+    font-size: 20px
+}
+
+#truyen-de-cu .owl-prev {
+    left: -5px
+}
+
+#truyen-de-cu .owl-next {
+    right: -5px
+}
+
+#thumbs.owl-theme .owl-next,
+#thumbs.owl-theme .owl-prev {
+    background: #333
+}
+
+.pro-image img {
+    width: 100%
+}
+
+.a-image img {
+    margin-bottom: 4px
+}
+
+.breadcrumb>li+li:before {
+    content: "\00BB"
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #c8102e
+}
+
+div.title_home {
+    margin: 0 0 20px 0;
+    border-top: 3px solid #fd5e1e;
+    text-align: left
+}
+
+.title_home_text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px
+}
+
+.title_home_text {
+    display: inline-block;
+    padding: 2px 15px 6px 30px;
+    line-height: 40px;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -.8px;
+    background: url(https://truyenmoi.xyz/themes/home/icons/update-icon.png) 7px center no-repeat #ff530d
+}
+
+.col-product {
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+.wrap-news {
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2)
+}
+
+.news.first-news {
+    margin-top: 0;
+    border: none
+}
+
+.news {
+    margin-bottom: .625rem
+}
+
+.news .news-title {
+    font-family: Anton, sans-serif;
+    font-size: 125%;
+    font-weight: 400;
+    display: block;
+    margin-bottom: .25rem
+}
+
+.news .news-title a:active,
+.news .news-title a:hover {
+    color: #b62831;
+    text-decoration: none
+}
+
+.news .news-desc {
+    color: #555;
+    margin-bottom: 0;
+    font-weight: 400
+}
+
+.first-news>a {
+    display: block
+}
+
+.lazy-loading-image.loaded {
+    -webkit-filter: blur(0);
+    filter: blur(0)
+}
+
+.first-news .card-img-top {
+    max-width: 100%;
+    border-top-right-radius: 0
+}
+
+.col-top-right {
+    padding: .625rem!important;
+    border-left: 1px solid #ddd
+}
+
+.col-top-right .news-right:not(:last-child) {
+    border-bottom: 1px dashed #ddd
+}
+
+.col-top-right .news-right:first-child {
+    margin-top: 0
+}
+
+.news-right:not(:last-child) {
+    margin-bottom: 10px
+}
+
+.col-top-right .news-right {
+    padding-bottom: .75rem
+}
+
+.media {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start
+}
+
+.news-right .news-right-img {
+    width: 100px;
+    margin-right: .625rem
+}
+
+.news-right .news-right-img img {
+    max-width: 100%
+}
+
+.lazy-loading-image.loaded {
+    -webkit-filter: blur(0);
+    filter: blur(0)
+}
+
+.lazy-loading-image {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transition: -webkit-filter .2s;
+    transition: -webkit-filter .2s;
+    -o-transition: filter .2s;
+    transition: filter .2s;
+    transition: filter .2s, -webkit-filter .2s
+}
+
+.first-news .card-block {
+    padding: .625rem
+}
+
+.has-menu-dots {
+    position: relative;
+    padding-right: 10px!important
+}
+
+.col-top-right .news-right .news-right-title {
+    font-weight: 600
+}
+
+.news-right .news-right-title {
+    display: block;
+    margin-bottom: .25rem;
+    max-height: 2.75rem;
+    line-height: 1.5;
+    overflow: hidden
+}
+
+.news-right .news-right-title a:active,
+.news-right .news-right-title a:hover {
+    color: #b62831;
+    text-decoration: none
+}
+
+.news-right-title a {
+    font-size: 1rem
+}
+
+.news-right .news-posted {
+    margin-bottom: 0;
+    line-height: 1
+}
+
+.news-right .news-posted span {
+    color: #888;
+    font-size: 80%;
+    margin-right: 0
+}
+
+span.origin a {
+    color: #888
+}
+
+.blog-col {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.h50 {
+    height: 50px!important
+}
+
+.wap-time {
+    margin: 0;
+    padding: 0
+}
+
+p.wap-time.px-2 {
+    margin: 12px 0;
+    padding: 0 7px
+}
+
+.home-section {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.section-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.section-header .title {
+    color: #333;
+    font-size: 150%;
+    text-transform: uppercase;
+    position: relative
+}
+
+.grid-item:hover {
+    text-decoration: none;
+    box-shadow: 0 0 rgba(0, 0, 0, .2), 0 0 20px 0 rgba(0, 0, 0, .3)
+}
+
+.t_clear {
+    height: 40px;
+    clear: both
+}
+
+.fa-sort-desc:before,
+.fa-sort-down:before {
+    content: "\f0dd"
+}
+
+.clear {
+    clear: both;
+    font-size: 0
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+    display: none
+}
+
+.row-padding {
+    border-top: 4px solid #d02128
+}
+
+.car-brand-title {
+    background-color: #fff;
+    display: flex;
+    padding: 10px 10px
+}
+
+.brand-name {
+    font-weight: 700;
+    color: #215e9c;
+    text-transform: uppercase
+}
+
+.car-brand-item {
+    width: 30%;
+    margin-right: 30px;
+    margin-left: 20px
+}
+
+.brand-menu {
+    width: 70%;
+    text-align: left
+}
+
+.brand-menu ul {
+    list-style-type: none;
+    margin: 0
+}
+
+.brand-menu ul {
+    list-style-type: none;
+    margin: 0
+}
+
+.brand-menu ul li a {
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif
+}
+
+.brand-menu ul li a:before {
+    content: "\2713\0020";
+    font-weight: 12px;
+    color: #555;
+    top: 9px;
+    left: 0;
+    font-size: 1rem;
+    line-height: 0
+}
+
+.col-truyen {
+    text-align: left
+}
+
+.image {
+    position: relative;
+    height: 200px;
+    border: 3px solid #673ab7;
+    box-shadow: #000 0 0 0;
+    text-align: center;
+    overflow: hidden
+}
+
+.image img {
+    vertical-align: middle;
+    width: 100%
+}
+
+.image .view {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 12px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    opacity: .65
+}
+
+.item-truyen ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.item-truyen figcaption {
+    padding: 5px 0 0;
+    position: relative
+}
+
+.item-truyen figcaption h3 {
+    font-size: 16px;
+    margin: 0 0 7px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+
+.item-truyen figcaption ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.text-left {
+    text-align: left
+}
+
+.chapter a {
+    font-size: 1em;
+    color: #d35400
+}
+
+.chapter a:hover {
+    font-size: 1em;
+    color: #03f;
+    text-decoration: none
+}
+
+.chapter .time {
+    color: #4cae4c;
+    font-size: .7em;
+    line-height: 20px;
+    font-style: italic;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 2px
+}
+
+.sts {
+    background: url(https://truyenmoi.xyz/themes/home/icons/item-bg.png) 1px 8px no-repeat;
+    padding-left: 15px;
+    color: #003555;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block
+}
+
+.visited-comics {
+    border: 3px solid #f1c40f
+}
+
+.title-history {
+    text-align: left;
+    height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    background: #f1c40f
+}
+
+.title-history h4 {
+    padding: 4px 15px 7px 30px;
+    font: 300 15px Open Sans, Tahoma, Geneva, sans-serif;
+    color: #fff;
+    background: url(https://truyenmoi.xyz/themes/home/icons/tag-icon.png) 7px center no-repeat
+}
+
+.title-history h4 a {
+    text-transform: lowercase;
+    margin-left: 10px
+}
+
+.darkBox,
+.darkDetail {
+    color: #333;
+    clear: right;
+    margin-bottom: 15px
+}
+
+.darkDetail {
+    border: 3px solid #059e9a
+}
+
+.darkBox h2 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #2980b9
+}
+
+.darkBox h2 .view-all {
+    float: right;
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic
+}
+
+.darkBox ul {
+    padding-left: 0;
+    margin: 0
+}
+
+.darkBox ul li {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #dedede
+}
+
+.darkBox ul li .thumb {
+    overflow: hidden;
+    width: 80px;
+    height: 70px;
+    float: left
+}
+
+.darkBox ul li .thumb img {
+    width: 100%;
+    left: 0
+}
+
+.darkBox ul li h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.darkBox ul li p {
+    margin: 0
+}
+
+.chapter a:focus,
+.chapter a:visited,
+a.visited {
+    text-decoration: none;
+    color: #d35400
+}
+
+.fa-angle-double-right:before {
+    content: "\f101"
+}
+
+.darkBox ul li .chapter .view {
+    display: block;
+    font-style: italic;
+    font-size: 1rem;
+    color: #666
+}
+
+.fa-angle-double-right:before {
+    content: "\f101"
+}
+
+.fa-close:before,
+.fa-remove:before,
+.fa-times:before {
+    content: "\f00d"
+}
+
+.visited-remove {
+    color: #c8102e
+}
+
+.visited-remove:visited {
+    color: #c8102e!important
+}
+
+.t-title a {
+    color: #c8102e;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase
+}
+
+a.jtip {
+    color: #03f;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.slide-caption h3 a {
+    height: 23px;
+    overflow: hidden;
+    font-size: 15px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.slide-caption a {
+    color: #fff;
+    font-size: 13px
+}
+
+.item {
+    margin: 0 7px;
+    position: relative;
+    height: 220px;
+    text-align: center;
+    overflow: hidden
+}
+
+.card-img img {
+    vertical-align: middle;
+    width: 100%
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    background: url(http://s.nettruyen.com/Data/Sites/1/skins/comic/images/bg_over.png)
+}
+
+.slide-caption h3 {
+    margin: 1px 0;
+    font-weight: 400
+}
+
+.slide-caption h3 {
+    margin: 1px 0;
+    font-weight: 400
+}
+
+.slide-caption>a:visited {
+    color: #989898
+}
+
+.slide-caption .time {
+    font-size: 11px;
+    font-style: italic;
+    padding-left: 10px
+}
+
+.fa-clock-o:before {
+    content: "\f017"
+}
+
+.list.list-truyen {
+    margin: 7px 0;
+    border: 3px solid #16a085
+}
+
+.list.list-truyen a {
+    text-decoration: none
+}
+
+.title-list {
+    text-align: left;
+    height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    background: #16a085
+}
+
+.title-list h4 {
+    padding: 4px 15px 7px 30px;
+    font: 300 15px Open Sans, Tahoma, Geneva, sans-serif;
+    color: #fff;
+    background: url(https://truyenmoi.xyz/themes/home/icons/tag-icon.png) 7px center no-repeat
+}
+
+.list>.row {
+    background-color: #fff
+}
+
+.list.list-cat>.row>div:nth-child(odd) {
+    padding-left: 20px!important
+}
+
+.list.list-cat>.row>div {
+    height: 30px!important;
+    line-height: 35px!important;
+    border: 0!important;
+    padding-left: 20px!important
+}
+
+.col-truyen-side .list>.row>div {
+    max-width: 140px;
+    padding: 0
+}
+
+.truyen-description {
+    padding-top: 8px
+}
+
+.col-detail {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.t-author .fa-bell,
+.t-author .fa-user {
+    color: #000
+}
+
+.col-image {
+    padding-left: 0;
+    padding-right: 10px
+}
+
+.col-image img {
+    width: 100%
+}
+
+.col-info {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    font-size: 20px
+}
+
+.fa-file-alt {
+    font-size: 20px
+}
+
+.fa-list {
+    font-size: 20px
+}
+
+.short-des {
+    text-align: left
+}
+
+.title-des {
+    margin: 0 0 10px 0!important
+}
+
+.all-chapter {
+    text-align: left
+}
+
+.heading {
+    padding: 5px 0 10px;
+    font-size: 20px
+}
+
+.all-chapter ul li {
+    border-bottom: 1px dashed #ddd;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 6px 0;
+    margin: 0
+}
+
+.info-list a {
+    color: #03f
+}
+
+.info-list a:hover {
+    text-decoration: none;
+    color: #c8102e
+}
+
+h3.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    padding: 0 15px 7px;
+    border-bottom: 1px dashed #b5b5b5;
+    text-transform: uppercase;
+    font-family: roboto condensed, Tahoma, sans-serif;
+    text-align: center
+}
+
+#more {
+    display: none
+}
+
+.btn-doc-tu-dau {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    background: #31a95b;
+    border-bottom: 2px solid #26904b;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+.btn-doc-moi-nhat {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    background: #e84c3d;
+    border-bottom: 2px solid #c0392b;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+.top .txt-primary,
+.top .txt-primary a {
+    font-size: 1.5em;
+    margin: 0 0 7px 10px;
+    display: inline-block;
+    color: #fff
+}
+
+.reading-control .home {
+    text-align: center;
+    color: #ae4ad9;
+    text-align: center;
+    vertical-align: middle;
+    padding: .5em .5em;
+    text-transform: uppercase
+}
+
+.reading-control .changeserver {
+    color: #fff;
+    position: relative;
+    background-color: #c8102e
+}
+
+.reading-control .changeserver span {
+    font-size: 12px;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+    font-weight: 700
+}
+
+.reading-control .select-chapter {
+    color: #555;
+    display: inline-block;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    width: 25%
+}
+
+.reading-control .next .fa,
+.reading-control .prev .fa {
+    visibility: hidden
+}
+
+.error {
+    color: red
+}
+
+.image-truyen {
+    margin-top: 20px
+}
+
+.hidden {
+    display: none
+}
+
+.next-link,
+.prev-link {
+    background-color: #be9f06;
+    color: #fff;
+    padding: .5em .5em;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.next-link:hover,
+.prev-link:hover {
+    background-color: peru;
+    text-decoration: none;
+    color: #fff
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: .6
+}
+
+.chapter-alert {
+    color: #fff
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    background-color: #fff
+}
+
+.home-button {
+    display: block;
+    padding: 7px 10px;
+    margin-bottom: 40px;
+    background: #ff530d
+}
+
+.list-button {
+    display: block;
+    padding: 7px 10px;
+    margin-bottom: 35px;
+    background: #9c27b0
+}
+
+#control-list-button {
+    position: fixed;
+    bottom: 100px;
+    right: 10px
+}
+
+#control-home-button {
+    position: fixed;
+    bottom: 50px;
+    right: 10px
+}
+
+.reading-control .chapter-nav {
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.search-holder input {
+    border: 0
+}
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 0
+}
+
+.search-holder>.input-group-btn>.btn {
+    padding: 5px 10px;
+    border-left: 0;
+    border-radius: 0
+}
+
+.ui-menu .ui-menu-item {
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: .9rem;
+    text-transform: lowercase;
+    min-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    outline: 0;
+    z-index: 10000
+}
+
+.ui-widget {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em
+}
+
+#preview {
+    position: absolute;
+    border: 3px solid #16a085;
+    background: #fff;
+    display: none;
+    color: #555;
+    width: 350px
+}
+
+#preview p {
+    margin: 0
+}
+
+#preview label {
+    margin: 0;
+    color: #059e9a;
+    font-weight: 700
+}
+
+.img-tooltip {
+    float: left;
+    width: 140px
+}
+
+.img-tooltip img {
+    width: 100%
+}
+
+.info-tooltip {
+    float: right;
+    width: 200px
+}
+
+.clearfix {
+    clear: both
+}
+
+.fa-refresh:before {
+    content: "\f021"
+}
+
+#back-home-button {
+    display: inline-block;
+    background-color: #ff9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000
+}
+
+#back-home-button::after {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff
+}
+
+#back-home-button:hover {
+    cursor: pointer;
+    background-color: #333;
+    font-size: 2em
+}
+
+#back-home-button:active {
+    background-color: #555;
+    font-size: 2em
+}
+
+#back-home-button.show {
+    font-size: 2em;
+    opacity: 1;
+    visibility: visible
+}
+
+p.name {
+    white-space: pre-wrap
+}
+
+.pagination {
+    border-radius: 0!important;
+    float: right
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0!important
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0!important
+}
+
+.page-link {
+    color: #ff530d
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #ff530d;
+    border-color: #ff530d
+}
+
+f
+=======
+*{margin:0;padding:0}body,html{height:100%;font-size:14px;font-weight:400;color:#333;font-family:Open Sans,Tahoma,Geneva,sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%;line-height:1.5}*,::after,::before{box-sizing:border-box}a{color:#333;text-decoration:none;background-color:transparent}a:active,a:focus,a:hover{text-decoration:none}.section-de-cu{background-color:#fff}.section-chapter-truyen{padding-top:5px!important}.section-view-chapter{padding:5px 0 30px 0}.index-section{padding:30px 0 30px 0}.dark{background-color:#ff530d}.btn{border-radius:0}.view-chapter{background:url(https://truyenmoi.xyz/themes/home/icons/black_thread.png)!important;border:0}.container{max-width:1270px}.container-fluid{padding-right:20px;padding-left:20px}.d-flex{display:flex!important}.mr-auto,.mx-auto{margin-right:auto!important}.mb-0,.my-0{margin-bottom:0!important}.mr-4,.mx-4{margin-right:1.5rem!important}.mr-auto,.mx-auto{margin-right:auto!important}.mt-10{margin-top:10px}.mb-5{margin-bottom:5px!important}.mb-10{margin-bottom:10px}.mr-5{margin-right:5px}.mr-10{margin-right:5px}.pl-15{padding-left:15px}.flex-wrap{-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.top-menu{background-color:#333;font-size:90%;text-align:center}.contact-mail,.top-menu .fa-envelope{color:#fff}.dropdown-menu{min-width:200px}.dropdown-menu.columns-3{min-width:600px;border:1px solid #d9d9d9;-moz-box-shadow:0 3px 8px rgba(3,3,3,.26);-webkit-box-shadow:0 3px 8px rgba(3,3,3,.26);box-shadow:0 3px 8px rgba(3,3,3,.26);border-radius:0;border:2px solid #ff530d}.multi-column-dropdown{list-style:none;margin:0;padding:0}.multi-column-dropdown li a{color:#000;padding:0 16px;text-decoration:none;display:block;width:100%;height:40px;line-height:40px}.multi-column-dropdown li a:hover{text-decoration:none;color:#ff530d}.breadcrumb-container{height:30px;line-height:30px;color:#4e4e4e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.navbar-breadcrumb{background:#ececec;border-top:1px solid #476171;box-shadow:1px 2px 1px #ccc}footer{background-color:#3f3f3f;color:#d5d5d5}footer a{color:#fff}footer a:hover{color:#0056b3;text-decoration:none}hr.light{border-top:1px solid #d5d5d5;width:75%}hr.light-100{border-top:1px solid #d5d5d5;width:75%}@media screen and (max-width:576px){#control-list-button{display:none}#control-home-button{display:none}.col-noi-dung{padding-left:0;padding-right:0}.breadcrumb{padding:0;background-color:#059e9a;white-space:nowrap;flex-wrap:unset}.breadcrumb li a{color:#fff;font-weight:400}.row{margin-right:-15px;margin-left:-15px}.hidden-control-mobile{display:block;position:fixed;bottom:0;font-size:13px;line-height:25px;background-color:#e4e4e4;max-height:40px;z-index:99999;white-space:nowrap;overflow-x:scroll;overflow-y:hidden;cursor:pointer;width:100%}.hidden-control-mobile a{padding:6px 5px;display:inline-block;vertical-align:middle}.hidden-control-mobile .hidden-list-chap{color:#9c27b0}.hidden-control-mobile .hidden-home-mobile{color:#ff530d}.hidden-control-mobile .change-server-mobile{color:#e91e63}.div-chap{display:inline-block}.hidden-control-mobile .hidden-next-chapter,.hidden-control-mobile .hidden-prev-chapter{background:#27ae60;color:#fff;border-radius:2px;padding:3px 10px}.info-list{font-size:.8em}.image-truyen img{width:100%}}@media (min-width:1200px){.row{margin-left:0;margin-right:0}.modal-header{background:#103f4b;text-align:center;color:#fff;text-transform:uppercase;border-top-left-radius:0;border-top-right-radius:0}.modal-content{border-radius:0}.modal-body{position:relative;padding:0}.close{position:absolute;right:-30px;top:0;z-index:999;font-size:2rem;font-weight:400;color:#fff;opacity:1}.btn-bao-loi{border:1px solid #103f4b;background:#103f4b;color:#fff;transition:all .3s;text-transform:uppercase;padding:10px 20px;white-space:nowrap}.breadcrumb{border-radius:0;background-color:#fff}.breadcrumb li a{color:#c8102e;font-weight:700}.breadcrumb li a:hover{text-decoration:none}.hidden-control-mobile{display:block}.hidden-control-mobile{display:block;font-size:13px;line-height:25px;background-color:#e4e4e4;max-height:40px;z-index:99999;white-space:nowrap;cursor:pointer;width:100%}.hidden-control-mobile a{padding:6px 5px;display:inline-block;vertical-align:middle}.hidden-control-mobile .hidden-list-chap{color:#9c27b0}.hidden-control-mobile .hidden-home-mobile{color:#ff530d}.hidden-control-mobile .change-server-mobile{color:#e91e63}.div-chap{display:inline-block}#hidden-select-chapter{height:30px;width:300px;text-align:right}.hidden-control-mobile .hidden-next-chapter,.hidden-control-mobile .hidden-prev-chapter{background:#27ae60;color:#fff;border-radius:2px;padding:3px 10px}.image-truyen img{width:80%}}.owl-theme .owl-nav [class*=owl-]{transition:all .3s ease;border-radius:0}.owl-theme .owl-nav [class*=owl-].disabled:hover{background-color:#d6d6d6}#truyen-de-cu.owl-theme .owl-next,#truyen-de-cu.owl-theme .owl-prev{background:rgba(0,0,0,.5);width:30px;line-height:40px;height:60px;margin-top:-20px;position:absolute;text-align:center;top:40%}.fa-arrow-left:before{content:"\f104";color:#fff;font-size:20px}.fa-arrow-right:before{content:"\f105";color:#fff;font-size:20px}#truyen-de-cu .owl-prev{left:-5px}#truyen-de-cu .owl-next{right:-5px}#thumbs.owl-theme .owl-next,#thumbs.owl-theme .owl-prev{background:#333}.pro-image img{width:100%}.a-image img{margin-bottom:4px}.breadcrumb>li+li:before{content:"\00BB"}.breadcrumb>li+li:before{padding:0 5px;color:#c8102e}div.title_home{margin:0 0 20px 0;border-top:3px solid #fd5e1e;text-align:left}.title_home_text{color:#fff;font-weight:400;font-size:20px}.title_home_text{display:inline-block;padding:2px 15px 6px 30px;line-height:40px;position:relative;margin:0;text-transform:uppercase;letter-spacing:-.8px;background:url(https://truyenmoi.xyz/themes/home/icons/update-icon.png) 7px center no-repeat #ff530d}.col-product{padding-right:20px;padding-left:20px}.wrap-news{background-color:#fff;border:1px solid rgba(255,255,255,.2)}.news.first-news{margin-top:0;border:none}.news{margin-bottom:.625rem}.news .news-title{font-family:Anton,sans-serif;font-size:125%;font-weight:400;display:block;margin-bottom:.25rem}.news .news-title a:active,.news .news-title a:hover{color:#b62831;text-decoration:none}.news .news-desc{color:#555;margin-bottom:0;font-weight:400}.first-news>a{display:block}.lazy-loading-image.loaded{-webkit-filter:blur(0);filter:blur(0)}.first-news .card-img-top{max-width:100%;border-top-right-radius:0}.col-top-right{padding:.625rem!important;border-left:1px solid #ddd}.col-top-right .news-right:not(:last-child){border-bottom:1px dashed #ddd}.col-top-right .news-right:first-child{margin-top:0}.news-right:not(:last-child){margin-bottom:10px}.col-top-right .news-right{padding-bottom:.75rem}.media{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-align:start;-webkit-box-align:start;align-items:flex-start}.news-right .news-right-img{width:100px;margin-right:.625rem}.news-right .news-right-img img{max-width:100%}.lazy-loading-image.loaded{-webkit-filter:blur(0);filter:blur(0)}.lazy-loading-image{-webkit-filter:blur(5px);filter:blur(5px);-webkit-transition:-webkit-filter .2s;transition:-webkit-filter .2s;-o-transition:filter .2s;transition:filter .2s;transition:filter .2s,-webkit-filter .2s}.first-news .card-block{padding:.625rem}.has-menu-dots{position:relative;padding-right:10px!important}.col-top-right .news-right .news-right-title{font-weight:600}.news-right .news-right-title{display:block;margin-bottom:.25rem;max-height:2.75rem;line-height:1.5;overflow:hidden}.news-right .news-right-title a:active,.news-right .news-right-title a:hover{color:#b62831;text-decoration:none}.news-right-title a{font-size:1rem}.news-right .news-posted{margin-bottom:0;line-height:1}.news-right .news-posted span{color:#888;font-size:80%;margin-right:0}span.origin a{color:#888}.blog-col{padding-left:10px;padding-right:10px}.h50{height:50px!important}.wap-time{margin:0;padding:0}p.wap-time.px-2{margin:12px 0;padding:0 7px}.home-section{padding-top:30px;padding-bottom:30px}.section-header{width:100%;text-align:center;margin-bottom:30px}.section-header .title{color:#333;font-size:150%;text-transform:uppercase;position:relative}.grid-item:hover{text-decoration:none;box-shadow:0 0 rgba(0,0,0,.2),0 0 20px 0 rgba(0,0,0,.3)}.t_clear{height:40px;clear:both}.fa-sort-desc:before,.fa-sort-down:before{content:"\f0dd"}.clear{clear:both;font-size:0}#menu{position:fixed;top:0;width:100%;height:50px;z-index:9999;display:none}.row-padding{border-top:4px solid #d02128}.car-brand-title{background-color:#fff;display:flex;padding:10px 10px}.brand-name{font-weight:700;color:#215e9c;text-transform:uppercase}.car-brand-item{width:30%;margin-right:30px;margin-left:20px}.brand-menu{width:70%;text-align:left}.brand-menu ul{list-style-type:none;margin:0}.brand-menu ul{list-style-type:none;margin:0}.brand-menu ul li a{text-decoration:none;line-height:1.5;font-family:Roboto,sans-serif}.brand-menu ul li a:before{content:"\2713\0020";font-weight:12px;color:#555;top:9px;left:0;font-size:1rem;line-height:0}.col-truyen{text-align:left}.image{position:relative;height:200px;border:3px solid #673ab7;box-shadow:#000 0 0 0;text-align:center;overflow:hidden}.image img{vertical-align:middle;width:100%}.image .view{position:absolute;bottom:0;left:0;right:0;height:25px;line-height:25px;padding-left:2px;padding-right:2px;font-size:12px;display:block;color:#fff;background-color:#000;opacity:.65}.item-truyen ul{margin:0;padding:0;list-style:none}.item-truyen figcaption{padding:5px 0 0;position:relative}.item-truyen figcaption h3{font-size:16px;margin:0 0 7px;font-weight:400;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.item-truyen figcaption ul{margin:0;padding:0;list-style:none}.text-left{text-align:left}.chapter a{font-size:1em;color:#d35400}.chapter a:hover{font-size:1em;color:#03f;text-decoration:none}.chapter .time{color:#4cae4c;font-size:.7em;line-height:20px;font-style:italic;float:right;overflow:hidden;white-space:nowrap;padding-right:2px}.sts{background:url(https://truyenmoi.xyz/themes/home/icons/item-bg.png) 1px 8px no-repeat;padding-left:15px;color:#003555;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:inline-block}.visited-comics{border:3px solid #f1c40f}.title-history{text-align:left;height:40px;text-transform:uppercase;position:relative;background:#f1c40f}.title-history h4{padding:4px 15px 7px 30px;font:300 15px Open Sans,Tahoma,Geneva,sans-serif;color:#fff;background:url(https://truyenmoi.xyz/themes/home/icons/tag-icon.png) 7px center no-repeat}.title-history h4 a{text-transform:lowercase;margin-left:10px}.darkBox,.darkDetail{color:#333;clear:right;margin-bottom:15px}.darkDetail{border:3px solid #059e9a}.darkBox h2{font-size:16px;margin:0;margin-bottom:10px;font-weight:700;color:#2980b9}.darkBox h2 .view-all{float:right;font-size:13px;line-height:22px;font-style:italic}.darkBox ul{padding-left:0;margin:0}.darkBox ul li{list-style:none;margin:0;padding:10px 0;border-top:1px solid #dedede}.darkBox ul li .thumb{overflow:hidden;width:80px;height:70px;float:left}.darkBox ul li .thumb img{width:100%;left:0}.darkBox ul li h3{font-size:1rem;font-weight:400;margin:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.darkBox ul li p{margin:0}.chapter a:focus,.chapter a:visited,a.visited{text-decoration:none;color:#d35400}.fa-angle-double-right:before{content:"\f101"}.darkBox ul li .chapter .view{display:block;font-style:italic;font-size:1rem;color:#666}.fa-angle-double-right:before{content:"\f101"}.fa-close:before,.fa-remove:before,.fa-times:before{content:"\f00d"}.visited-remove{color:#c8102e}.visited-remove:visited{color:#c8102e!important}.t-title a{color:#c8102e;font-weight:700;text-decoration:none;text-transform:lowercase}a.jtip{color:#03f;text-decoration:none;font-weight:700}.item ul{margin:0;padding:0;list-style:none}.slide-caption h3 a{height:23px;overflow:hidden;font-size:15px;display:block;white-space:nowrap;text-overflow:ellipsis}.slide-caption a{color:#fff;font-size:13px}.item{margin:0 7px;position:relative;height:220px;text-align:center;overflow:hidden}.card-img img{vertical-align:middle;width:100%}.slide-caption{position:absolute;bottom:10px;left:0;right:0;height:50px;line-height:25px;padding-left:5px;padding-right:5px;font-size:13px;display:block;color:#fff;background-color:#000;background:url(http://s.nettruyen.com/Data/Sites/1/skins/comic/images/bg_over.png)}.slide-caption h3{margin:1px 0;font-weight:400}.slide-caption h3{margin:1px 0;font-weight:400}.slide-caption>a:visited{color:#989898}.slide-caption .time{font-size:11px;font-style:italic;padding-left:10px}.fa-clock-o:before{content:"\f017"}.list.list-truyen{margin:7px 0;border:3px solid #16a085}.list.list-truyen a{text-decoration:none}.title-list{text-align:left;height:40px;text-transform:uppercase;position:relative;background:#16a085}.title-list h4{padding:4px 15px 7px 30px;font:300 15px Open Sans,Tahoma,Geneva,sans-serif;color:#fff;background:url(https://truyenmoi.xyz/themes/home/icons/tag-icon.png) 7px center no-repeat}.list>.row{background-color:#fff}.list.list-cat>.row>div:nth-child(odd){padding-left:20px!important}.list.list-cat>.row>div{height:30px!important;line-height:35px!important;border:0!important;padding-left:20px!important}.col-truyen-side .list>.row>div{max-width:140px;padding:0}.truyen-description{padding-top:8px}.col-detail{padding-left:0;padding-right:0}.t-author .fa-bell,.t-author .fa-user{color:#000}.col-image{padding-left:0;padding-right:10px}.col-image img{width:100%}.col-info{padding-left:0;padding-right:0;text-align:left;font-size:20px}.fa-file-alt{font-size:20px}.fa-list{font-size:20px}.short-des{text-align:left}.title-des{margin:0 0 10px 0!important}.all-chapter{text-align:left}.heading{padding:5px 0 10px;font-size:20px}.all-chapter ul li{border-bottom:1px dashed #ddd;text-overflow:ellipsis;overflow:hidden;padding:6px 0;margin:0}.info-list a{color:#03f}.info-list a:hover{text-decoration:none;color:#c8102e}h1.title{font-size:24px;font-weight:700;margin:0 0 5px;padding:0 15px 7px;border-bottom:1px dashed #b5b5b5;text-transform:uppercase;font-family:roboto condensed,Tahoma,sans-serif;text-align:center}#more{display:none}.btn-doc-tu-dau{float:left;width:100%;padding:10px 0;margin:5px 0;position:relative;font-size:14px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#31a95b;border-bottom:2px solid #26904b;cursor:pointer;border-radius:3px}.btn-doc-moi-nhat{float:left;width:100%;padding:10px 0;margin:5px 0;position:relative;font-size:14px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#e84c3d;border-bottom:2px solid #c0392b;cursor:pointer;border-radius:3px}.top .txt-primary,.top .txt-primary a{font-size:1.5em;margin:0 0 7px 10px;display:inline-block;color:#fff}.reading-control .home{text-align:center;color:#ae4ad9;text-align:center;vertical-align:middle;padding:.5em .5em;text-transform:uppercase}.reading-control .changeserver{color:#fff;position:relative;background-color:#c8102e}.reading-control .changeserver span{font-size:12px;position:absolute;left:17px;top:8px;font-weight:700}.reading-control .select-chapter{color:#555;display:inline-block;padding:4px 6px;border:1px solid #ccc;width:25%}.reading-control .next .fa,.reading-control .prev .fa{visibility:hidden}.error{color:red}.image-truyen{margin-top:20px}.hidden{display:none}.next-link,.prev-link{background-color:#be9f06;color:#fff;padding:.5em .5em;text-decoration:none;text-transform:uppercase}.next-link:hover,.prev-link:hover{background-color:peru;text-decoration:none;color:#fff}.disabled{pointer-events:none;cursor:default;opacity:.6}.chapter-alert{color:#fff}.sticky{position:fixed;bottom:0;width:90%;background-color:#fff}.home-button{display:block;padding:7px 10px;margin-bottom:40px;background:#ff530d}.list-button{display:block;padding:7px 10px;margin-bottom:35px;background:#9c27b0}#control-list-button{position:fixed;bottom:100px;right:10px}#control-home-button{position:fixed;bottom:50px;right:10px}.reading-control .chapter-nav{white-space:nowrap;overflow:hidden}.search-holder input{border:0}.input-group-btn{position:relative;font-size:0;white-space:nowrap;background-color:#fff;border:0}.search-holder>.input-group-btn>.btn{padding:5px 10px;border-left:0;border-radius:0}.ui-menu .ui-menu-item{margin-top:5px;cursor:pointer;font-size:.9rem;text-transform:lowercase;min-height:30px;text-align:center;border-bottom:1px solid #ebebeb}.ui-menu{list-style:none;padding:0;margin:0;display:block;outline:0;z-index:10000}.ui-widget{font-family:Arial,Helvetica,sans-serif;font-size:1em}#preview{position:absolute;border:3px solid #16a085;background:#fff;display:none;color:#555;width:350px}#preview p{margin:0}#preview label{margin:0;color:#059e9a;font-weight:700}.img-tooltip{float:left;width:140px}.img-tooltip img{width:100%}.info-tooltip{float:right;width:200px}.clearfix{clear:both}.fa-refresh:before{content:"\f021"}#back-home-button{display:inline-block;background-color:#ff9800;width:50px;height:50px;text-align:center;position:fixed;bottom:30px;left:10px;transition:background-color .3s,opacity .5s,visibility .5s;opacity:0;visibility:hidden;z-index:1000}#back-home-button::after{font-weight:400;font-style:normal;font-size:2em;line-height:50px;color:#fff}#back-home-button:hover{cursor:pointer;background-color:#333;font-size:2em}#back-home-button:active{background-color:#555;font-size:2em}#back-home-button.show{font-size:2em;opacity:1;visibility:visible}p.name{white-space:pre-wrap}.pagination{border-radius:0!important;float:right}.page-item:first-child .page-link{border-radius:0!important}.page-item:last-child .page-link{border-radius:0!important}.page-link{color:#ff530d}.page-item.active .page-link{z-index:1;color:#fff;background-color:#ff530d;border-color:#ff530d}
+>>>>>>> 1c42b6ddadace70c76c2571eb5da41412a43009e

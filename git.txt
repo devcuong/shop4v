@@ -1,0 +1,13 @@
+1.git init
+2.git config user.name "someone"
+3.git config user.email "someone@someplace.com"
+4.git add *
+5.git commit -m "some init msg"
+http://denuidoi.com/
+thegioiamthuc.com
+botoquanmoc.com
+https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+http://themes.webmasterdriver.net/carforyou/demo/listing-detail-2.html
+https://carspot.scriptsbundle.com/home-2/
+http://wordpress.templaza.net/autoshowroom/
+https://codepen.io/manab_27/pen/KqzbB

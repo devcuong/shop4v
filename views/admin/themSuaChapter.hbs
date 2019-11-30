@@ -1,0 +1,27 @@
+<div class="card-body">
+    <h5 class="card-title">{{viewTitle}}</h5>
+    <form class="" action="/admin/chapter/add" method="POST" enctype="text/html">
+        <input type="hidden" name="chapId" value="{{chapter._id}}">
+         <div class="position-relative row form-group"><label for="idTruyen" class="col-sm-2 col-form-label">ID Truyện</label>
+            <div class="col-sm-10"><input name="idTruyen" placeholder="ID Truyện" value="{{{tId}}}" type="text"
+                    class="form-control" ></div>
+        </div>
+        <div class="position-relative row form-group"><label for="tenChuong" class="col-sm-2 col-form-label">Tên Chương</label>
+            <div class="col-sm-10"><input name="tenChuong" placeholder="Tiêu đề video" value="{{chapter.ten_chuong}}" type="text"
+                    class="form-control" ></div>
+        </div>
+          <div class="position-relative row form-group"><label for="server1" class="col-sm-2 col-form-label">Server 1</label>
+            <div class="col-sm-10"><textarea name="server1" placeholder="Server 1" type="text"
+                    class="form-control" >{{chapter.server_1}}</textarea></div>
+        </div>
+        <div class="position-relative row form-group"><label for="server2" class="col-sm-2 col-form-label">Server 2</label>
+            <div class="col-sm-10"><textarea name="server2" placeholder="Server 2" type="text"
+                    class="form-control" >{{chapter.server_2}}</textarea></div>
+        </div>
+        <div class="position-relative row form-check">
+            <div class="col-sm-10 offset-sm-2">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

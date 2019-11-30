@@ -1,0 +1,84 @@
+<div class="card-body">
+  <h5 class="card-title">{{viewTitle}}</h5>
+  <form class="" action="/admin/truyen/add" method="POST" enctype="text/html">
+    <input type="hidden" name="truyenId" value="{{truyen._id}}">
+    <div class="position-relative row form-group"><label for="tenTruyen" class="col-sm-2 col-form-label">Tên
+        Truyện</label>
+      <div class="col-sm-10"><input name="tenTruyen" placeholder="Tên Truyện" value="{{truyen.ten_truyen}}" type="text"
+          class="form-control" required></div>
+    </div>
+    <div class="position-relative row form-group"><label for="tacGia" class="col-sm-2 col-form-label">Tác giả</label>
+      <div class="col-sm-10"><input name="tacGia" placeholder="Tác Giả" value="{{truyen.tac_gia}}" type="text"
+          class="form-control" required></div>
+    </div>
+    <div class="position-relative row form-group"><label for="hinhTruyen" class="col-sm-2 col-form-label">Hình
+        Truyện</label>
+      <div class="col-sm-10"><input name="hinhTruyen" placeholder="Hình Truyện" value="{{truyen.hinh_truyen}}"
+          type="text" class="form-control" required></div>
+    </div>
+    <div class="position-relative row form-group"><label for="noiDung" class="col-sm-2 col-form-label">Nội Dung</label>
+      <div class="col-sm-10"><input name="noiDung" placeholder="Nội Dung" value="{{truyen.noi_dung}}" type="text"
+          class="form-control" required></div>
+    </div>
+    <div class="position-relative row form-group"><label for="theLoai" class="col-sm-2 col-form-label">Thể Loại</label>
+      <div class="col-sm-6"><textarea id="ds-the-loai" name="theLoai" placeholder="Thể Loại" type="text"
+          class="form-control" required>{{truyen.the_loai}}</textarea>
+      </div>
+      <div class="col-sm-4">
+        <select class="form-control-sm form-control form-group" id="chon-the-loai">
+              {{#each lstTheLoai}}
+              <option value="{{this.slug_the_loai}}">{{this.ten_the_loai}}</option>
+              {{/each}}
+        </select>
+        <script>
+        function themTheLoai() {
+          var dsTheLoai = document.getElementById("ds-the-loai").innerHTML.trim();
+          var txtDanhSachTheLoai="";
+          if(dsTheLoai == ""){
+            txtDanhSachTheLoai += document.getElementById("chon-the-loai").value;
+          }
+          else{
+            var lstDanhSachTheLoai = dsTheLoai.replace("[","").replace("]","").split(",");
+            for(i = 0; i<lstDanhSachTheLoai.length; i++)
+            {
+              txtDanhSachTheLoai += lstDanhSachTheLoai[i] + ",";
+            }
+            txtDanhSachTheLoai += document.getElementById("chon-the-loai").value;
+          }
+          document.getElementById("ds-the-loai").innerHTML = txtDanhSachTheLoai.trim();
+        }
+        </script>
+        <div class="position-relative"><button type="button" class="btn-success" onclick="themTheLoai()">Submit</button></div>
+        </div>
+    </div>
+    <div class="position-relative row form-group"><label for="soChuong" class="col-sm-2 col-form-label">Số
+        Chương</label>
+      <div class="col-sm-10"><input name="soChuong" placeholder="Số Chương" value="{{truyen.so_chuong}}" type="text"
+          class="form-control"></div>
+    </div>
+    
+    <div class="position-relative row form-group"><label for="luotXem" class="col-sm-2 col-form-label">Lượt Xem</label>
+      <div class="col-sm-10"><input name="luotXem" placeholder="Lượt Xem" value="{{truyen.luot_xem}}" type="text"
+          class="form-control"></div>
+    </div>
+    <div class="position-relative row form-group"><label for="luotDanhGia" class="col-sm-2 col-form-label">Lượt Đánh
+        Giá</label>
+      <div class="col-sm-10"><input name="luotDanhGia" placeholder="Lượt Đánh Giá" value="{{truyen.luot_danh_gia}}"
+          type="text" class="form-control"></div>
+    </div>
+    <div class="position-relative row form-group"><label for="xepHang" class="col-sm-2 col-form-label">Xếp Hạng</label>
+      <div class="col-sm-10"><input name="xepHang" placeholder="Xếp Hạng" value="{{truyen.xep_hang}}" type="text"
+          class="form-control"></div>
+    </div>
+    <div class="position-relative row form-group"><label for="luotTheoDoi" class="col-sm-2 col-form-label">Lượt Theo
+        Dõi</label>
+      <div class="col-sm-10"><input name="luotTheoDoi" placeholder="Lượt Theo Dõi" value="{{truyen.luot_theo_doi}}"
+          type="text" class="form-control"></div>
+    </div>
+    <div class="position-relative row form-check">
+      <div class="col-sm-10 offset-sm-2">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,10 @@
+{ "_id" : { "$oid" : "5db18e09b44f792204f2a2f0" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "ok", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1ab4539f7001ea4d33479" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "123", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1ab67967f1613c4ae3725" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "123", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1abf70b937c2224c36f5b" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "gì vào dưới đâ", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1ac4514ac2d2164351934" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "gì vào dưới đâ", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1ac9bb992ab2004478be3" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "err", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1ad3ab992ab2004478be4" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "ị lỗi ", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1ad67b992ab2004478be5" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "y bị lỗi", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5db1bd25b992ab2004478be6" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "y bị lỗi", "ngay_bao" : "24/10/2019" }
+{ "_id" : { "$oid" : "5dda76a958cb2c0bd45049e1" }, "error_chap" : "5d9b455ebf493a1dd844676d", "mo_ta" : "uh", "ngay_bao" : "24/11/2019" }

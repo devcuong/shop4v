@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-9">
+        <h5 class="card-title">QUẢN LÝ TIN TỨC</h5>
+    </div>
+    <div class="col-md-3">
+        <button class="mb-2 btn-transition btn btn-success" onclick="themTinTuc()">
+            THÊM TIN TỨC</button>
+    </div>
+</div>
+
+<script>
+    function themTinTuc() {
+        location.href = "tin-tuc/add";
+    } 
+</script>
+<table class="mb-0 table">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Người đăng</th>
+            <th>Nội dung ngắn</th>
+            <th>Nguồn đăng</th>
+            <th>Ngày đăng</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.tieu_de}}</td>
+            <td>{{this.nguoi_dang}}</td>
+            <td>{{this.noi_dung_ngan}}</td>
+            <td>{{this.nguon_dang}}</td>
+            <td>{{this.ngay_dang}}</td>
+            <td>{{this.views}}</td>
+            <td>
+                <a href="tin-tuc/edit/{{this._id}}"><i class="fas fa-edit"></i></a>
+                <a href="tin-tuc/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');">
+                    <i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

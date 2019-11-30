@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-md-9">
+        <h5 class="card-title">QUẢN LÝ TRUYỆN</h5>
+    </div>
+    <div class="col-md-3">
+        <button class="mb-2 btn-transition btn btn-success" onclick="themTruyen()">
+            THÊM TRUYỆN</button>
+    </div>
+</div>
+<script>
+    function themTruyen() {
+        location.href = "/admin/truyen/add/";
+    } 
+</script>
+<table class="mb-0 table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Check</th>
+            <th>Tác giả</th>
+            <th>Hình</th>
+            <th>Số chương</th>
+            <th>xem</th>
+            <th>update</th>
+            <th>action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.ten_truyen}}</td>
+            <td><button class="btn-info update-truyen" data-link="{{this.nguon_net_truyen}}" data-id="{{this._id}}" data-chap="{{this.so_chuong}}">check update</button></td>
+            <td>{{this.tac_gia}}</td>
+            <td> <img src="{{this.hinh_truyen}}" width="100px" class="src"></td>
+            <td>{{this.so_chuong}}</td>
+            <td>{{this.luot_xem}}</td>
+            <td>{{this.ngay_cap_nhat}}</td>
+            <td>
+                <a href="/admin/truyen/edit/{{this._id}}"><i class="fas fa-edit"></i></a>
+                <a href="/admin/truyen/delete/{{this._id}}"
+                    onclick="return confirm('Are you sure to delete this record ?');">
+                    <i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                <a href="/admin/chapter/{{this._id}}">
+                    <i class="fa fa-tasks fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<script>
+    $(".update-truyen").click(function () {
+        var dataIndex = $(this).attr("data-id");
+        $.ajax({
+            type: 'post',
+            data: {
+                idTruyen: $(this).attr("data-id"),
+                url: $(this).attr("data-link"),
+                soChap: $(this).attr("data-chap")
+            },
+            dataType: 'json',
+            url: '/admin/leech/update-chapter',
+            success: function (response) {
+                if(response.status){
+                    $("[data-id="+dataIndex+"]").addClass("hidden");
+                    alert("Đã update");
+                }else{
+                    alert("Không có chap mới");
+                }
+            }
+        });
+    })
+</script>

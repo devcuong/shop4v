@@ -1,0 +1,152 @@
+<div class="row">
+  <div class="col-md-12">
+    <h5 class="card-title">{{titleTrang}}</h5>
+  </div>
+</div>
+
+<script>
+  function themTinTuc() {
+    location.href = "tin-tuc/add";
+  }
+</script>
+<div class="position-relative form-group"><label for="exampleEmail" class="">Email</label>
+  <input name="urlTruyen" id="leach-url-truyen" placeholder="with a placeholder" type="text" class="form-control url-truyen">
+  <button class="mb-2 mr-2 btn btn-success get-truyen">Success
+  </button>
+  <div class="loadingGif" style="width: 60px;margin: 0 auto; display: none;">
+    <img src="/image/loading.gif" alt="loading next page" style="width: 100%">
+  </div>
+  <input type="hidden" id="idTruyen">
+  <div class="position-relative row form-group"><label for="tenTruyen" class="col-sm-2 col-form-label">Tên
+      Truyện</label>
+    <div class="col-sm-10"><input name="tenTruyen" id="ten-truyen" placeholder="Tên Truyện" type="text"
+        class="form-control"></div>
+  </div>
+  <div class="position-relative row form-group"><label for="tacGia" class="col-sm-2 col-form-label">Tác Giả</label>
+    <div class="col-sm-10"><input name="tacGia" id="tac-gia" placeholder="Tác Giả" type="text" class="form-control" />
+    </div>
+  </div>
+  <div class="position-relative row form-group"><label for="theLoai" class="col-sm-2 col-form-label">Thể Loại</label>
+    <div class="col-sm-10"><textarea name="theLoai" id="the-loai" placeholder="Thể Loại" type="text"
+        class="form-control"></textarea></div>
+  </div>
+  <div class="position-relative row form-group"><label for="soChap" class="col-sm-2 col-form-label">Số Chapter</label>
+    <div class="col-sm-10"><input name="soChap" id="so-chap" placeholder="Số Chapter" type="text"
+        class="form-control" />
+    </div>
+  </div>
+  <div class="position-relative row form-group"><label for="noiDung" class="col-sm-2 col-form-label">Nội Dung</label>
+    <div class="col-sm-10"><textarea name="noiDung" id="noi-dung" placeholder="Nội Dung" type="text"
+        class="form-control"></textarea></div>
+  </div>
+  <div class="position-relative row form-group"><label for="hinhTruyen" class="col-sm-2 col-form-label">Hình
+      Truyện</label>
+    <div class="col-sm-10"><input name="hinhTruyen" id="hinh-truyen" placeholder="Hình Truyện" type="text"
+        class="form-control" />
+    </div>
+  </div>
+  <div class="position-relative row">
+    <div class="col-sm-6">
+      <button class="btn btn-primary" id="btn-them-truyen">Thêm Truyện</button>
+    </div>
+    <div class="col-sm-6">
+      <button class="btn btn-primary" id="btn-them-chap">Thêm Chap</button>
+    </div>
+  </div>
+  <div class="position-relative row form-check">
+  </div>
+</div>
+<table class="mb-0 table" id="tbl-chapter-comic">
+  <thead>
+    <tr>
+      <th>danh sách chương</th>
+      <th>lấy chương truyện</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<div id="res-json"></div>
+<script>
+  $(".get-truyen").click(function () {
+    $("#tbl-chapter-comic > tbody").empty();
+    $.ajax({
+      type: 'post',
+      data: {
+        url: $(".url-truyen").val()
+      },
+      dataType: 'json',
+      url: 'http://176.223.139.239/admin/leech/',
+      success: function (response) {
+        var truyenObj = JSON.parse(response);
+        $("#ten-truyen").val(truyenObj.ten_truyen);
+        $("#tac-gia").val(truyenObj.tac_gia.replace("Tác giả", "").trim());
+        var lstTheLoai = truyenObj.the_loai.replace("Thể loại", "").trim().split("-");
+        var arrTheLoai = [];
+        for (var i = 0; i < lstTheLoai.length; i++) {
+          arrTheLoai.push(changeToSlug(lstTheLoai[i].trim()));
+        }
+        $("#the-loai").val(arrTheLoai);
+        $("#noi-dung").val(truyenObj.noi_dung);
+        $("#hinh-truyen").val(truyenObj.hinh_truyen);
+        $("#so-chap").val(truyenObj.so_chap);
+        for (var i = 0; i < truyenObj.danh_sach_chap.length; i++) {
+          var addChapterButton = $("<button>").addClass("btn-info");
+          addChapterButton.text("GET CHAPTER");
+          addChapterButton.attr('data-link', truyenObj.danh_sach_chap[truyenObj.danh_sach_chap.length - i - 1]);
+          var row = $("<tr>");
+          row.append($("<td>").text(truyenObj.danh_sach_chap[truyenObj.danh_sach_chap.length - i - 1]));
+          row.append($("<td>").html(addChapterButton));
+          $("#tbl-chapter-comic").append(row);
+        }
+      }
+    });
+  })
+  $("#btn-them-truyen").click(function () {
+    var urlTruyen = $(".url-truyen").val();
+    $.ajax({
+      type: 'post',
+      data: {
+        tenTruyen: $("#ten-truyen").val(),
+        tacGia: $("#tac-gia").val(),
+        theLoai: $("#the-loai").val(),
+        noiDung: $("#noi-dung").val(),
+        hinhTruyen: $("#hinh-truyen").val(),
+        soChap: $("#so-chap").val(),
+        nguonNetTruyen: urlTruyen
+      },
+      dataType: 'json',
+      url: 'http://176.223.139.239/admin/leech/them-truyen',
+      success: function (response) {
+        alert(response);
+        $("#idTruyen").val(response);
+      }
+    })
+  })
+  $("#btn-them-chap").click(function () {
+    if ("da-co" == $("#idTruyen").val()) {
+      alert("Không thêm chap vì truyện đã có");
+    } else {
+      if ("da-co" != $("#idTruyen").val()) {
+        var trTable = $("#tbl-chapter-comic tr");
+        for (var i = 1; i < trTable.length; i++) {
+          setTimeout(function (i) {
+            $.ajax({
+              type: 'post',
+              data: {
+                idTruyen: $("#idTruyen").val(),
+                url: trTable[i].cells[0].innerHTML
+              },
+              dataType: 'json',
+              url: 'http://176.223.139.239/admin/leech/them-chapter',
+              success: function (response) {
+                trTable[i].cells[0].innerHTML = "<b><font color='red'>" + trTable[i].cells[0].innerHTML + "</font></b>";
+              }
+            })
+          }, 3000 * i, i);
+        }
+      }
+    }
+  })
+
+</script>
