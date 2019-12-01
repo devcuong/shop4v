@@ -56,8 +56,8 @@ app.engine("hbs", exphbs({
 
 app.set("view engine", "hbs");
 
-app.listen(3000, () => {
-    console.log("Express server started at port : 3000");
+app.listen(80, () => {
+    console.log("Express server started at port : 80");
 });
 app.use("/admin/tin-tuc", tintucController);
 app.use("/admin/video", videoController);

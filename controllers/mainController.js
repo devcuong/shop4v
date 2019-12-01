@@ -10,22 +10,24 @@ const TheLoai = mongoose.model("TheLoai");
 const Truyen = mongoose.model("Truyen");
 const navRender = require("../utils/navRender.js");
 require('dotenv').config()
-    // trang chu
+// trang chu
 router.get("/", (req, res) => {
+    var hostUrl = req.get('host').split(".");
+    if (3 != hostUrl.length) {
         var perPage = 12;
         var page = parseInt(req.query.page) || 1;
         var skip = (perPage * page) - perPage;
         var q2 = Truyen.aggregate([{
-                $lookup: { from: "chapter", localField: "_id", foreignField: "ma_truyen", as: "chap_moi_ra" }
-            },
-            {
-                "$addFields": {
-                    "chap_moi_ra": { "$slice": ["$chap_moi_ra", -3] }
-                }
+            $lookup: { from: "chapter", localField: "_id", foreignField: "ma_truyen", as: "chap_moi_ra" }
+        },
+        {
+            "$addFields": {
+                "chap_moi_ra": { "$slice": ["$chap_moi_ra", -3] }
             }
-        ]).sort({ _id: -1 }).skip(skip).limit(perPage).exec(function(err2, truyens) {
+        }
+        ]).sort({ _id: -1 }).skip(skip).limit(perPage).exec(function (err2, truyens) {
             if (!err2) {
-                Truyen.count().exec(function(err, count) {
+                Truyen.count().exec(function (err, count) {
                     res.render("home/noiDungTrangChu", {
                         layout: 'homeLayout.hbs',
                         lstTruyenDeCu: truyens,
@@ -40,11 +42,15 @@ router.get("/", (req, res) => {
                 console.log(err2);
             }
         })
-    })
-    // trang chu
+    }
+    else{
+        console.log(hostUrl[0]);
+    }
+})
+// trang chu
 router.get("/hot", (req, res) => {
     var sortTruyen = { luot_xem: -1 };
-    Truyen.find().sort(sortTruyen).exec(function(err, truyen) {
+    Truyen.find().sort(sortTruyen).exec(function (err, truyen) {
         if (!err) {
             res.render("home/noiDungTrangTimTruyen", {
                 layout: 'homeLayout.hbs',
@@ -61,8 +67,8 @@ var storage = multer.diskStorage({
 
     // folder up file
     destination: 'public/upload',
-    filename: function(req, file, cb) {
-        crypto.pseudoRandomBytes(16, function(err, raw) {
+    filename: function (req, file, cb) {
+        crypto.pseudoRandomBytes(16, function (err, raw) {
             if (err) return cb(err)
             cb(null, Math.floor(Math.random() * 9000000000) + 1000000000 + path.extname(file.originalname))
         })
@@ -71,7 +77,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 // load image va upload image
-router.get("/files", function(req, res) {
+router.get("/files", function (req, res) {
     const images = fs.readdirSync("public/upload")
     var sorted = []
     for (let item of images) {
@@ -89,11 +95,11 @@ router.get("/files", function(req, res) {
     res.send(sorted);
 });
 
-router.post("/upload", upload.array("flFileUpload", 12), function(req, res, next) {
+router.post("/upload", upload.array("flFileUpload", 12), function (req, res, next) {
     res.redirect("back");
 });
 
-router.post("/delete_file", function(req, res, next) {
+router.post("/delete_file", function (req, res, next) {
     var url_del = "public" + req.body.url_del
     if (fs.existsSync(url_del)) {
         fs.unlinkSync(url_del)
