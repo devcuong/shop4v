@@ -551,6 +551,9 @@ hr.light-100 {
     .owl-carousel .owl-dots .owl-dot.active span {
         background-color: #c8102e;
     }
+    .slideshow .container {
+        width: auto !important;
+    }
     /*endslider*/
     /*product*/
     .product {
@@ -1195,4 +1198,7 @@ p.wap-time.px-2 {
 }
 .menu .navbar {
     height: 46px;
+}
+.slideshow{
+    display: block;
 }
