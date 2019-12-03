@@ -47,11 +47,8 @@ a:active {
     background-color: #fff;
 }
 
-.section-quan-tam-nhieu-nhat {
-    background-color: #fff;
-}
 
-.section-uu-dai-gia {
+.section-san-pham {
     background-color: #fff;
 }
 
@@ -117,21 +114,22 @@ a:active {
 
 /* topnav */
 
-.top-menu {
+.top-group {
     background-color: #333;
     font-size: 90%;
     text-align: center;
 }
 
-.top-menu .fa-envelope,
+.top-group .fa-envelope,
 .contact-mail {
     color: #fff;
 }
 
 
 /* endtopnav */
+/*header*/
 
-
+/*endheader*/
 /* mainnav */
 
 #main-menu {
@@ -149,20 +147,6 @@ a:active {
 .index-menu .nav-item {
     padding: 18px 15px 22px 15px;
     font-size: 120%;
-}
-
-#main-menu .logo {
-    max-width: 150px;
-    max-height: 50px;
-}
-
-#main-menu .logo-item {
-    padding: 18px 15px 22px 15px;
-    font-size: 120%;
-}
-
-#main-menu .logo img {
-    max-height: 30px;
 }
 
 .nav-container {
@@ -372,6 +356,9 @@ hr.light-100 {
     }
     .carousel-caption btn {
         font-size: 160%;
+    }
+    .banner{
+        display: none;
     }
 }
 
@@ -775,8 +762,7 @@ hr.light-100 {
         margin-bottom: 2.5em;
     }
     .section-tin-tuc-xe-daily .view-more::before,
-    .section-uu-dai-gia .view-more::before,
-    .section-video-xe-daily .view-more::before {
+    .section-uu-dai-gia .view-more::before{
         left: 0;
         background: -webkit-gradient(linear, right top, left top, from(#ccc), to(#F3F3F3));
         background: -webkit-linear-gradient(right, #ccc, #F3F3F3);
@@ -784,8 +770,7 @@ hr.light-100 {
         background: linear-gradient(to left, #ccc, #F3F3F3);
     }
     .section-tin-tuc-xe-daily .view-more::after,
-    .section-uu-dai-gia .view-more::after,
-    .section-video-xe-daily .view-more::after {
+    .section-uu-dai-gia .view-more::after{
         right: 0;
         background: -webkit-gradient(linear, left top, right top, from(#ccc), color-stop(#ccc), to(#fff));
         background: -webkit-linear-gradient(left, #ccc, #ccc, #fff);
@@ -832,71 +817,9 @@ hr.light-100 {
         color: #fff;
     }
     /* endviewmore */
-    /*video*/
-    .video-item {
-        overflow: hidden;
+    .logo {
+        display: none;
     }
-    .img-video {
-        position: relative;
-    }
-    .img-video:before {
-        content: "";
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        position: absolute;
-        height: 64px;
-        width: 64px;
-        display: inline-block;
-        top: 50%;
-        left: 50%;
-        margin-top: -32px;
-        margin-left: -32px;
-        background-image: url(https://www.toyota.com.vn/Content/images/icon-play-video-1.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        pointer-events: none;
-        opacity: 0.8;
-    }
-    .video-button {
-        background-image: url(https://www.toyota.com.vn/Content/images/play-button.png)!important;
-        background-repeat: no-repeat!important;
-        background-position: center!important;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        float: left;
-        -webkit-transition: 0.3s all;
-        -o-transition: 0.3s all;
-        transition: 0.3s all;
-    }
-    .img-video:hover:before {
-        background-image: url(https://www.toyota.com.vn/Content/images/icon-play-video.png);
-    }
-    /* modal */
-    .modal-dialog {
-        max-width: 800px;
-        margin: 30px auto;
-    }
-    .modal-body {
-        position:relative;
-        padding:0px;
-    }
-    .close {
-        position:absolute;
-        right:-30px;
-        top:0;
-        z-index:999;
-        font-size:2rem;
-        font-weight: normal;
-        color:#fff;
-        opacity:1;
-      }
-    /* endmodal */
-    /* endvideo */
 }
 
 div.title_home {
@@ -1130,19 +1053,6 @@ p.wap-time.px-2 {
     padding-bottom: 30px;
 }
 
-.section-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section-header .title {
-    color: #333;
-    font-size: 150%;
-    text-transform: uppercase;
-    position: relative;
-}
-
 .grid-item:hover {
     text-decoration: none;
     box-shadow: 0 0 rgba(0, 0, 0, .2), 0 0 20px 0 rgba(0, 0, 0, 0.3)
@@ -1284,4 +1194,9 @@ p.wap-time.px-2 {
         flex: 0 0 20%;
         max-width: 20%;
     }
+}
+
+.logo .img-logo {
+    max-width: 100%;
+    max-height: 200px;
 }
