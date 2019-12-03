@@ -341,20 +341,28 @@ hr.light-100 {
 /*Media query*/
 
 @media(max-width: 992px) {
-    .carousel-caption {
-        top: 20%;
-    }
-    .carousel-caption h1 {
-        font-size: 250%;
-    }
-    .carousel-caption h3 {
-        font-size: 160%;
-    }
-    .carousel-caption btn {
-        font-size: 160%;
-    }
     .banner{
         display: none;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 54px;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-right: 50%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.show {
+        right: 0;
     }
 }
 
@@ -551,7 +559,7 @@ hr.light-100 {
     .owl-carousel .owl-dots .owl-dot.active span {
         background-color: #c8102e;
     }
-    .slideshow .container {
+    .slideshow .container-slide {
         width: auto !important;
     }
     /*endslider*/
@@ -1195,9 +1203,17 @@ p.wap-time.px-2 {
 }
 .menu{
     background-color: #e11428;
+    display: block;
 }
 .menu .navbar {
     height: 46px;
+}
+.cd-nav-content {
+    z-index: 3;
+    position: relative;
+    transition: transform .3s;
+    transform: translateZ(0);
+    will-change: transform;
 }
 .slideshow{
     display: block;
