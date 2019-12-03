@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/truyentranh", { useNewUrlParser: true, useFindAndModify: false }, (err) => {
+mongoose.connect("mongodb://localhost:27017/shop4v", { useNewUrlParser: true, useFindAndModify: false }, (err) => {
     if (!err) {
         console.log("MongoDB Connection Succeeded")
     } else {
@@ -7,9 +7,4 @@ mongoose.connect("mongodb://localhost:27017/truyentranh", { useNewUrlParser: tru
     }
 });
 
-require("./tintuc.model");
-require("./video.model");
-require("./theloai.model");
-require("./truyen.model");
-require("./chapter.model");
-require("./error.model");
+require("./theme.model");
