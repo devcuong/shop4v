@@ -47,7 +47,6 @@ a:active {
     background-color: #fff;
 }
 
-
 .section-san-pham {
     background-color: #fff;
 }
@@ -127,9 +126,14 @@ a:active {
 
 
 /* endtopnav */
+
+
 /*header*/
 
+
 /*endheader*/
+
+
 /* mainnav */
 
 #main-menu {
@@ -341,7 +345,7 @@ hr.light-100 {
 /*Media query*/
 
 @media(max-width: 992px) {
-    .banner{
+    .banner {
         display: none;
     }
     .navbar-collapse {
@@ -769,7 +773,7 @@ hr.light-100 {
         margin-bottom: 2.5em;
     }
     .section-tin-tuc-xe-daily .view-more::before,
-    .section-uu-dai-gia .view-more::before{
+    .section-uu-dai-gia .view-more::before {
         left: 0;
         background: -webkit-gradient(linear, right top, left top, from(#ccc), to(#F3F3F3));
         background: -webkit-linear-gradient(right, #ccc, #F3F3F3);
@@ -777,7 +781,7 @@ hr.light-100 {
         background: linear-gradient(to left, #ccc, #F3F3F3);
     }
     .section-tin-tuc-xe-daily .view-more::after,
-    .section-uu-dai-gia .view-more::after{
+    .section-uu-dai-gia .view-more::after {
         right: 0;
         background: -webkit-gradient(linear, left top, right top, from(#ccc), color-stop(#ccc), to(#fff));
         background: -webkit-linear-gradient(left, #ccc, #ccc, #fff);
@@ -1082,6 +1086,8 @@ p.wap-time.px-2 {
     clear: both;
     font-size: 0;
 }
+
+
 /*carbrandmenu*/
 
 .car-brand-title {
@@ -1135,6 +1141,7 @@ p.wap-time.px-2 {
 
 
 /*carbrandmenu*/
+
 .col-2dot4,
 .col-sm-2dot4,
 .col-md-2dot4,
@@ -1146,12 +1153,14 @@ p.wap-time.px-2 {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 .col-2dot4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
 }
+
 @media (min-width: 540px) {
     .col-sm-2dot4 {
         -webkit-box-flex: 0;
@@ -1160,6 +1169,7 @@ p.wap-time.px-2 {
         max-width: 20%;
     }
 }
+
 @media (min-width: 720px) {
     .col-md-2dot4 {
         -webkit-box-flex: 0;
@@ -1168,6 +1178,7 @@ p.wap-time.px-2 {
         max-width: 20%;
     }
 }
+
 @media (min-width: 960px) {
     .col-lg-2dot4 {
         -webkit-box-flex: 0;
@@ -1176,6 +1187,7 @@ p.wap-time.px-2 {
         max-width: 20%;
     }
 }
+
 @media (min-width: 1140px) {
     .col-xl-2dot4 {
         -webkit-box-flex: 0;
@@ -1189,6 +1201,7 @@ p.wap-time.px-2 {
     max-width: 100%;
     max-height: 200px;
 }
+
 .red {
     background-color: #e11428;
 }
@@ -1198,16 +1211,19 @@ p.wap-time.px-2 {
     padding: 0px;
 }
 
-.navbar{
+.navbar {
     padding: 0px;
 }
-.menu{
+
+.menu {
     background-color: #e11428;
     display: block;
 }
+
 .menu .navbar {
     height: 46px;
 }
+
 .cd-nav-content {
     z-index: 3;
     position: relative;
@@ -1215,6 +1231,7 @@ p.wap-time.px-2 {
     transform: translateZ(0);
     will-change: transform;
 }
-.slideshow{
+
+.slideshow {
     display: block;
 }
