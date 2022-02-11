@@ -8,7 +8,7 @@
         "dateformat": "^3.0.3",
         "dotenv": "^8.2.0",
         "express": "*",
-        "express-handlebars": "^3.1.0",
+        "express-handlebars": "^5.3.1",
         "moment": "^2.24.0",
         "mongoose": "^5.7.6",
         "multer": "^1.4.2",
